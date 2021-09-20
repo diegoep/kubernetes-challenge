@@ -21,5 +21,5 @@ Não há necessidade de fazer push da imagem docker para um registry. Você deve
 
 Você pode expor o Docker do minikube com o comando:
 ```shell
-$ eval (minikube docker-env)
+$ eval $(minikube docker-env)
 ```
