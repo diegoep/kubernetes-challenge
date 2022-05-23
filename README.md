@@ -4,7 +4,7 @@ Implante essa aplicação no seu [Minikube](https://github.com/kubernetes/miniku
 
 ```
 $ curl $(minikube ip)
-Olá Diego!
+Olá Lucas Ferreira Prazeres!
 ```
 
 ## Instruções
