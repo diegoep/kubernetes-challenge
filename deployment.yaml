@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: vlapp
+  name: vlapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vlapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: vlapp
+    spec:
+      containers:
+      - image: vl.01
+        imagePullPolicy: IfNotPresent
+        name: vl-01-42lsz
+        resources: {}
+        env:
+        - name: NAME
+          valueFrom:
+            configMapKeyRef:
+              name: vl-config
+              key: name
+
+status: {}

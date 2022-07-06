@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  name: Valeria Santana
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: vl-config
