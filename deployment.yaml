@@ -3,30 +3,30 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: vapp
-  name: vapp
+    app: vlapp
+  name: vlapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vapp
+      app: vlapp
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: vapp
+        app: vlapp
     spec:
       containers:
-      - image: virt.01
+      - image: vl.01
         imagePullPolicy: IfNotPresent
-        name: virt-01-42lsz
+        name: vl-01-42lsz
         resources: {}
         env:
         - name: NAME
           valueFrom:
             configMapKeyRef:
-              name: virt-config
+              name: vl-config
               key: name
 
 status: {}
